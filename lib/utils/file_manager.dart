@@ -28,7 +28,6 @@ class FileManager {
       }else if(dataList.any((element) => element.split(",").last==phone)){
           showMessage("Mobile already exists", Colors.red, context);
       }else{
-        // toAdd.add(stringList);
         dataList.add(stringList);
         preferences.setStringList('dataList', dataList);
       showMessage("Data added successfully", Colors.green, context);
